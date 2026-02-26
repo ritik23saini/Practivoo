@@ -1,3 +1,3 @@
 # Practivoo
-Nexj js project 
-project is private 
+Next js project 
+#project is private on other repository 
