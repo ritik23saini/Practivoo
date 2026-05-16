@@ -1,0 +1,44 @@
+openapi: 3.0.0
+info:
+  title: Practivoo API
+  version: 1.0.0
+paths:
+  /api/auth/student-login:
+    post:
+      summary: Login student
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                studentId:
+                  type: string
+                password:
+                  type: string
+      responses:
+        '200':
+          description: Success
+        '401':
+          description: Unauthorized
+
+  /api/auth/teacher-login:
+    post:
+      summary: Login teacher
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                teacherId:
+                  type: string
+                password:
+                  type: string
+      responses:
+        '200':
+          description: Success
+        '401':
+          description: Unauthorized
